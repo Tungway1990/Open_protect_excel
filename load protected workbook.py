@@ -18,4 +18,4 @@ while excel.Cells(row, 1).Value is not None:
 title=excel.Range(excel.Cells(1,1),excel.Cells(1,col-1)).Value
 data=excel.Range(excel.Cells(2,1),excel.Cells(row-1,col-1)).Value
 
-euhk = pd.DataFrame(data,columns=title[0])
+df = pd.DataFrame(data,columns=title[0])
